@@ -1,0 +1,36 @@
+@value makerWhite,makerGreen,makerLightGrey from '../../common/colors.css';
+@value mediaQuery from '../../common/size.css';
+
+.main {
+  width: 100%;
+  max-width: 80rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: makerWhite;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  min-height: 0;
+}
+
+.cardMaker,
+.cardPreview {
+  flex: 1 1 50%;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.cardMaker {
+  border-right: 1px solid makerLightGrey;
+  padding: 0.5em 1em;
+}
+
+@media screen and (max-width: mediaQuery) {
+  .card {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,41 @@
+@value makerWhite, makerGreen,makerLightPink from '../../common/colors.css';
+
+.login {
+  width: 35rem;
+  height: 22rem;
+  align-items: center;
+}
+
+.loginSection {
+  height: 12.5rem;
+  background-color: makerWhite;
+}
+
+.title {
+  margin: 0;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.providers {
+  list-style: none;
+  padding: 0;
+}
+
+.button {
+  border: 3px solid;
+  border-color: makerGreen;
+  width: 100%;
+  background-color: makerWhite;
+  border-radius: 1.2rem;
+  height: 2em;
+  margin-bottom: 0.5em;
+  color: makerGreen;
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: makerLightPink;
+}
